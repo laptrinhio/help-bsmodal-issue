@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learning with SweetAlert</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <h1>LapTrinh.IO - Dynamic refresh DOM</h1>
+                </div>
+            </div>
+            <div class="panel-body">
+                <h3>All the added content will be updated below.</h3>
+                <hr>
+                <p id="main-content">DEFAULT</p>
+            </div>
+            <div class="panel-footer">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-update">Update +</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-update" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="modal-label">Add more data +</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="content">Content to add:</label>
+                            <input type="text" class="form-control" id="content" placeholder="Put content">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="btn-update">Update</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
